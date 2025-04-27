@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #89c2d9, #caf0f8);
+  font-family: 'Poppins', sans-serif;
+}
+
+.resume-form-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 90%;
+  margin: 2rem auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.resume-form-container:hover {
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.2);
+}
+
+.resume-form-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: 700;
+}
+
+.resume-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.resume-form-container input,
+.resume-form-container textarea {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background: #fdfdfd;
+  box-sizing: border-box;
+  transition: border 0.3s, background 0.3s;
+}
+
+.resume-form-container input:focus,
+.resume-form-container textarea:focus {
+  outline: none;
+  border-color: #4f80ff;
+  background: #ffffff;
+}
+
+.resume-form-container textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.resume-form-container button {
+  padding: 1rem;
+  background: linear-gradient(135deg, #4f80ff, #355cdd);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.resume-form-container button:hover {
+  background: linear-gradient(135deg, #355cdd, #233a99);
+  transform: translateY(-2px);
+}
+
+.download-link {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+  color: #4f80ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.download-link:hover {
+  color: #355cdd;
+  text-decoration: underline;
+}
+
+.score-result {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745;
+}

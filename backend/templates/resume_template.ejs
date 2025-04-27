@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= name %> - Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+      color: #000000;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #000000;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 3px;
+    }
+    p {
+      margin: 5px 0 10px 0;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><%= name %></h1>
+    <div class="contact-info">
+      <% if (email) { %>
+        <p><strong>Email:</strong> <%= email %></p>
+      <% } %>
+      <% if (phone) { %>
+        <p><strong>Phone:</strong> <%= phone %></p>
+      <% } %>
+      <% if (github) { %>
+        <p><strong>GitHub:</strong> <%= github %></p>
+      <% } %>
+      <% if (linkedin) { %>
+        <p><strong>LinkedIn:</strong> <%= linkedin %></p>
+      <% } %>
+    </div>
+  </header>
+
+  <section>
+    <h2>Education</h2>
+    <p><%= education %></p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <p><%= skills %></p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <p><%= experience %></p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <p><%= projects %></p>
+  </section>
+
+  <section>
+    <h2>About Yourself</h2>
+    <p><%= about_yourself %></p>
+  </section>
+</body>
+</html>
